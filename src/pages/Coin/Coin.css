@@ -1,0 +1,124 @@
+.spinner{
+    display: grid;
+    place-self: center;
+    min-height: 80vh;
+}
+
+.spin{
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color: #4500c6 ;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.coin{
+    padding: 0 20px;
+}
+.coin-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+}
+.coin-name img{
+    margin: 10px auto;
+    margin-top: 100px;
+    max-width: 100px;
+}
+.coin-name p b{
+    margin-top: -50px;
+    font-size: 44px;
+    font-weight: 500;
+}
+.coin-chart{
+    max-width: 600px;
+    height: 250px;
+    margin: auto;
+}
+.coin-info{
+    max-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.coin-info ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5f5d5f;
+    list-style: none;
+}
+.coin-info ul li:last-child{
+    font-weight: 300;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    background: transparent;
+    color: #faf6f6;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #f9f7f7;
+    color: #3c3c3c;
+}
+
+
+.knowmore{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+.coin-overview{
+    
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* .coin-overview p span{
+    font-weight: 300;
+} */
+.coin-overview-title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #5f5d5f;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+/* .coin-overview-title p{
+    width: 50%;
+} */
+.coin-overview-description{
+    height: min(max-content,50vh);
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5f5d5f;
+    font-weight: 300;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #3c3c3c;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4500c6;
+}
